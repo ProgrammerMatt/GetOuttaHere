@@ -1,0 +1,42 @@
+PhantomJS is launching GhostDriver...
+[INFO  - 2016-02-22T17:56:50.103Z] GhostDriver - Main - running on port 64267
+[INFO  - 2016-02-22T17:56:50.190Z] Session [a5e9fea0-d98d-11e5-a4c9-27c98a4b1536] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.8 Safari/534.34","webSecurityEnabled":true}
+[INFO  - 2016-02-22T17:56:50.190Z] Session [a5e9fea0-d98d-11e5-a4c9-27c98a4b1536] - page.customHeaders:  - {}
+[INFO  - 2016-02-22T17:56:50.190Z] Session [a5e9fea0-d98d-11e5-a4c9-27c98a4b1536] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"1.9.8","driverName":"ghostdriver","driverVersion":"1.1.0","platform":"mac-10.10 (Yosemite)-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2016-02-22T17:56:50.190Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: a5e9fea0-d98d-11e5-a4c9-27c98a4b1536
+[INFO  - 2016-02-22T17:56:50.767Z] Session [a5e9fea0-d98d-11e5-a4c9-27c98a4b1536] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.8 Safari/534.34","webSecurityEnabled":true}
+[INFO  - 2016-02-22T17:56:50.767Z] Session [a5e9fea0-d98d-11e5-a4c9-27c98a4b1536] - page.customHeaders:  - {}
+[INFO  - 2016-02-22T18:01:38.953Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-02-22T18:11:44.365Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+nymous function) (https://assets.dice.com/techpro/js/global/bootstrap-notify.js:77)
+  (anonymous function) (https://assets.dice.com/techpro/js/global/bootstrap-notify.js:93)
+[ERROR - 2016-02-22T17:56:53.565Z] Session [a5e9fea0-d98d-11e5-a4c9-27c98a4b1536] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating '$')
+[ERROR - 2016-02-22T17:56:53.565Z] Session [a5e9fea0-d98d-11e5-a4c9-27c98a4b1536] - page.onError - stack:
+  (anonymous function) (https://assets.dice.com/techpro/js/global/jquery.smartbanner.js:232)
+  (anonymous function) (https://assets.dice.com/techpro/js/global/jquery.smartbanner.js:309)
+[ERROR - 2016-02-22T17:56:53.565Z] Session [a5e9fea0-d98d-11e5-a4c9-27c98a4b1536] - page.onError - msg: ReferenceError: Can't find variable: $
+[ERROR - 2016-02-22T17:56:53.565Z] Session [a5e9fea0-d98d-11e5-a4c9-27c98a4b1536] - page.onError - stack:
+  (anonymous function) (https://www.dice.com/jobs/detail/10454717/395652?src=27&rx_medium=cpc&CMPID=AG_IN_PD_JS_AV_OG_RC_&utm_source=Indeed&utm_medium=Aggregator&utm_content=&utm_campaign=Advocacy_Ongoing&rx_source=Indeed&rx_campaign=Indeed18&rx_group=85:759)
+[ERROR - 2016-02-22T17:56:53.566Z] Session [a5e9fea0-d98d-11e5-a4c9-27c98a4b1536] - page.onError - msg: ReferenceError: Can't find variable: $
+[ERROR - 2016-02-22T17:56:53.566Z] Session [a5e9fea0-d98d-11e5-a4c9-27c98a4b1536] - page.onError - stack:
+  (anonymous function) (https://assets.dice.com/techpro/js/jobDetails/viewjob.js:2)
+[ERROR - 2016-02-22T17:56:53.567Z] Session [a5e9fea0-d98d-11e5-a4c9-27c98a4b1536] - page.onError - msg: ReferenceError: Can't find variable: $
+[ERROR - 2016-02-22T17:56:53.567Z] Session [a5e9fea0-d98d-11e5-a4c9-27c98a4b1536] - page.onError - stack:
+  (anonymous function) (https://www.dice.com/jobs/detail/10454717/395652?src=27&rx_medium=cpc&CMPID=AG_IN_PD_JS_AV_OG_RC_&utm_source=Indeed&utm_medium=Aggregator&utm_content=&utm_campaign=Advocacy_Ongoing&rx_source=Indeed&rx_campaign=Indeed18&rx_group=85:795)
+[ERROR - 2016-02-22T17:56:54.495Z] Session [a5e9fea0-d98d-11e5-a4c9-27c98a4b1536] - page.onError - msg: ReferenceError: Can't find variable: $
+[ERROR - 2016-02-22T17:56:54.495Z] Session [a5e9fea0-d98d-11e5-a4c9-27c98a4b1536] - page.onError - stack:
+  (anonymous function) (https://www.dice.com/jobs/detail/10454717/395652?src=27&rx_medium=cpc&CMPID=AG_IN_PD_JS_AV_OG_RC_&utm_source=Indeed&utm_medium=Aggregator&utm_content=&utm_campaign=Advocacy_Ongoing&rx_source=Indeed&rx_campaign=Indeed18&rx_group=85:803)
+[ERROR - 2016-02-22T17:56:54.496Z] Session [a5e9fea0-d98d-11e5-a4c9-27c98a4b1536] - page.onError - msg: ReferenceError: Can't find variable: $
+[ERROR - 2016-02-22T17:56:54.496Z] Session [a5e9fea0-d98d-11e5-a4c9-27c98a4b1536] - page.onError - stack:
+  (anonymous function) (https://assets.dice.com/techpro/js/global/login-dialog.js:1)
+[ERROR - 2016-02-22T17:56:54.496Z] Session [a5e9fea0-d98d-11e5-a4c9-27c98a4b1536] - page.onError - msg: ReferenceError: Can't find variable: $
+[ERROR - 2016-02-22T17:56:54.496Z] Session [a5e9fea0-d98d-11e5-a4c9-27c98a4b1536] - page.onError - stack:
+  (anonymous function) (https://www.dice.com/jobs/detail/10454717/395652?src=27&rx_medium=cpc&CMPID=AG_IN_PD_JS_AV_OG_RC_&utm_source=Indeed&utm_medium=Aggregator&utm_content=&utm_campaign=Advocacy_Ongoing&rx_source=Indeed&rx_campaign=Indeed18&rx_group=85:807)
+[ERROR - 2016-02-22T17:56:54.497Z] Session [a5e9fea0-d98d-11e5-a4c9-27c98a4b1536] - page.onError - msg: ReferenceError: Can't find variable: $
+[ERROR - 2016-02-22T17:56:54.497Z] Session [a5e9fea0-d98d-11e5-a4c9-27c98a4b1536] - page.onError - stack:
+  (anonymous function) (https://www.dice.com/jobs/detail/10454717/395652?src=27&rx_medium=cpc&CMPID=AG_IN_PD_JS_AV_OG_RC_&utm_source=Indeed&utm_medium=Aggregator&utm_content=&utm_campaign=Advocacy_Ongoing&rx_source=Indeed&rx_campaign=Indeed18&rx_group=85:871)
+[ERROR - 2016-02-22T17:56:56.250Z] Session [a5e9fea0-d98d-11e5-a4c9-27c98a4b1536] - page.onError - msg: ReferenceError: Can't find variable: $
+[ERROR - 2016-02-22T17:56:56.250Z] Session [a5e9fea0-d98d-11e5-a4c9-27c98a4b1536] - page.onError - stack:
+  (anonymous function) (https://assets.adobedtm.com/8c06f57f0590fbbe830e2dd0366687c0599684e7/scripts/satellite-56252b0764746d590f000818.js:12)
+[INFO  - 2016-02-22T18:01:50.107Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-02-22T18:11:44.282Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW

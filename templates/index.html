@@ -1,0 +1,590 @@
+<!DOCTYPE HTML>
+<!--
+  Typify by TEMPLATED
+  templated.co @templatedco
+  Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+  <head>
+    <title>Get Me Out Of Here!</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet"  href= "{{ url_for('static',filename='css/main.css') }}" />
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+  </head>
+  <body>
+
+    <!-- Banner -->
+      <section id="banner">
+        <h2 id="main_header"><strong>Googleet Me Outta Here</strong></h2>
+        <p>Powered by <a href="http://indeed.com/">Indeed.com</a> &amp; <a href="http://amadeus.com/">Amadeus.com</a></p>
+        <!--<ul class="actions">
+          <li><a href="#" class="button special">Get started</a></li>
+        </ul>-->
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- One -->
+
+            <header>
+              <section id="two" class="wrapper style2 special">
+                <div class="inner narrow">
+              <h2>Now, we need you to know a little more about you before our complex algorithm can create a new life for you!</h2><div>
+            </section>       
+            </header>
+
+            <!--Begin our questions class-->
+            <div class = "questions2">
+             First name: <input type="text" name="FirstName" value="" style = "width: 100%;"><br>
+          <table id="questionsTable" style="background-color:rgba(0, 0, 0, 0);">
+              <td style="word-wrap: break-word;" valign="top" width="50%">
+            <form>
+
+            <p>What is your gender?</p>
+              <input type="radio" name="gender" value="male" checked> Male<br>
+              <input type="radio" name="gender" value="female"> Female<br>
+            </form> 
+
+            <form>
+            <p>Do you hate your job?</p>
+              <input id="yes_job" type="radio" name="likejob" value="yes" checked> Yes<br>
+              <input id="no_job" type="radio" name="likejob" value="no"> No<br>
+            </form> 
+
+            <p>Are you lying to us?</p> <!--Unhide this if they say no-->
+            <form>
+              <input id="yes_job" type="radio" name="lyin" value="yes" checked> Yes<br>
+              <input id="no_job" type="radio" name="lyin" value="no"> No<br>
+            </form>
+
+            <p class="questions">I tend to do what I am told</p>
+            <form>
+              <input class="radio_yes" id="yes_told" type="radio" name="told" value="yes" checked> Yes<br>
+              <input id="no_told" type="radio" name="told" value="no"> No<br>
+            </form> 
+
+            <p class="questions">I have a great deal of will power</p>
+            <form>
+              <input class="radio_yes" id="yes_p" type="radio" name="pow" value="yes" checked> Yes<br>
+              <input id="no_p" type="radio" name="pow" value="no"> No<br>
+            </form>  
+              </td>         
+            <td style="word-wrap: break-word; vertical-align: top;" valign="top" width="50%">
+            <p class="questions">I am always on the move</p>
+            <form>
+              <input class="radio_yes" id="yes_m" type="radio" name="mov1" value="yes" checked> Yes<br>
+              <input id="no_m" type="radio" name="mov1" value="no"> No<br>
+            </form>
+
+            <p class="questions">I like </p>
+            <form>
+              <input class="radio_yes" id="yes_m" type="radio" name="mov2" value="yes" checked> Yes<br>
+              <input id="no_m" type="radio" name="mov2" value="no"> No<br>
+            </form>
+
+            <p class="questions">I like </p>
+            <form>
+              <input class="radio_yes" id="yes_m" type="radio" name="mov3" value="yes" checked> Yes<br>
+              <input id="no_m" type="radio" name="mov3" value="no"> No<br>
+            </form>
+
+            <p class="questions">I like </p>
+            <form>
+              <input class="radio_yes" id="yes_m" type="radio" name="mov4" value="yes" checked> Yes<br>
+              <input id="no_m" type="radio" name="mov4" value="no"> No<br>
+            </form>
+
+            <p class="questions">I like </p>
+            <form>
+              <input class="radio_yes" id="yes_m" type="radio" name="mov5" value="yes" checked> Yes<br>
+              <input id="no_m" type="radio" name="mov5" value="no"> No<br>
+            </form>
+          </td>
+          </table>
+            <br>
+            <input class="button special" type="button" value="Submit"
+                   onclick="return submitAnswers()" />
+             <br>
+
+
+
+
+
+
+            </div>
+            </div> <!--End questions class-->
+
+    <!-- Two -->
+      <section id="not important" class="wrapper style2 special">
+                    <p style="margin-top: 50px" id="flight_info"></p>
+        <div class="inner narrow">
+          <header>
+            <h2 id="testtest">Job Description</h2>
+          </header>
+
+
+        <div class="inner narrow">
+          <table id="jobTable">
+              <td style="word-wrap: break-word;" valign="top" width="50%">
+                <img id="jobPicture" src="http://firstqualityplumbingfl.com/wp-content/uploads/2013/11/plumbing-questions.jpg"/>
+              </td>
+            <td style="word-wrap: break-word; vertical-align: top;" valign="top" width="50%">
+            <strong>Job Title</strong><p id="jobTitle">Plumber Test</p>
+            <strong>Location</strong><p id="location">Portland, MN</p>
+            <strong>Company Name</strong><p id="companyName">Company Name</p>
+          <strong>Job Information</strong><p id="jobDescription">
+            asdfasdfasdfasdfasdfasdfasdfaasdfasdfasdfasdfasdfasdfasdfaasdfasdfasdfasdfasdfasdfasdfaasdfasdfasdfasdfasdfasdfasdfaasdfasdfasdfasdfasdfasdfasdfaasdfasdfasdfasdfasdfasdfasdfaasdfasdfasdfasdfasdfasdfasdfaasdfasdfasdfasdfasdfasdfasdfa</p>
+
+            <a id="indeedJobLink" href="">Link to Job Posting (Indeed.com)!</a>
+          
+        </td>
+
+      </table>
+          <form class="grid-form" method="post" action="#">
+        <!--    <div class="form-control narrow"> -->
+              <img src="http://www.utsa.edu/careercenter/images/other_job_banks/indeed_logo.png" alt="Indeed.com" style="width:250px;height:109px;">
+
+              <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_2013_Google.png" alt="Google" style="width:300px;height:109px;">
+
+
+              <img src="https://upload.wikimedia.org/wikipedia/en/archive/9/9f/20140130085619!Amadeus_IT_Group_logo.png" alt="Amadeus" style="width:300px;height:70px;">
+              
+              
+            <!--  </div> -->
+          </form>
+        </div>
+      </section>
+
+    <!-- Footer -->
+      <footer id="footer">
+        <div class="copyright">
+          Designed by Matt Wilfert &amp; Joseph Procopio</a>.
+        </div>
+      </footer>
+
+    <!-- Scripts -->
+      <script href= "{{ url_for('static',filename='js/jquery.min.js') }}"></script>
+      <script href= "{{ url_for('static',filename='js/skel.min.js') }}"></script>
+      <script href= "{{ url_for('static',filename='js/util.js') }}"></script>
+      <script href= "{{ url_for('static',filename='js/main.js') }}"></script>
+
+<script type='text/javascript'>
+  $("#jobTable").hide();
+
+function shuffle(o) {
+  var j, x, i;
+  for (i = o.length; i; i -= 1) {
+    j = Math.floor(Math.random() * i);
+    x = o[i-1];
+    o[i-1] = o[j];
+    o[j] = x;
+  }
+
+  return o;
+}
+
+
+airports_info = {}
+// airports_info["ATL"] = "Atlanta, GA";
+// airports_info["LAX"] = "Las Angeles, CA";
+airports_info["DFW"] = "Dallas, TX";
+// airports_info["JFK"] = "New York, New York";
+// airports_info["DEN"] = "Denver, CO";
+// airports_info["SFO"] = "San Francisco, CA";
+// airports_info["CLT"] = "Charolette, NC";
+// airports_info["LAS"] = "Las Vegas, NV";
+// airports_info["PHX"] = "Phoenix, AZ";
+// airports_info["IAH"] = "Houston, TX";
+// airports_info["SEA"] = "Seattle, WA";
+
+
+// airports = ["ATL", "LAX", "DFW", "JFK", "DEN", "SFO", "CLT", "LAS", "PHX", "IAH", "SEA"];
+airports = ["DFW"];
+
+selected_airport = airports[Math.floor(Math.random()*airports.length)];
+selected_city = airports_info[selected_airport];
+
+
+questions = {};
+answers = {};
+
+questions["People Look up to me"] = ["leader", "logical"];
+questions["I tend to be a kind person"] = ["friendly", "personal"];
+questions["I accept life as it comes"] = ["plumber"];
+questions["People say I have a strong personality"] = ["leader", "plumber"];
+questions["I find it difficult to relax"] = ["hands on", "hard working"];
+questions["I have a very wide circle of friends"] = ["friendly"];
+questions["I am always ready to help others"] = ["friendly", "hard working"];
+questions["I like to behave correctly"] = ["logical", "leader"];
+
+questions["I tend to do what I am told"] =["logical", "hard working"];
+questions["I like things to be very neat and tidy"]=["hard working", "hands on"];
+questions["People can't put me down"] = ["leader", "logical"]; 
+questions["I enjoy having fun"] = ["friendly"];
+questions["I respect my elders and those in authority"] =["friendly", "plumber", "logical"];
+questions["I am always willing to do new things"] = ["hands on", "hard working"]
+questions["I believe things will go well"]  =["leader", "logical", "hard working"];
+questions["I am always willing to help"] =["personal", "friendly"];
+
+questions["I am very active, both at work and play"] =["hard working"];
+questions["I am a very calm and placid person"] =["logical"];
+questions["I generally get my own way"] =["plumber"];
+questions["I am very contented with life"] =["plumber"];
+questions["I tend to trust people"] =["friendly", "personal"];
+questions["I like peace and quiet"] =["logical"];
+questions["I have a very positive attitude"] =["friendly", "personal"];
+
+questions["I have a great deal of will power"] = ["leader", "plumber"];
+questions["I always take notice of what other people say"] = ["friendly"]
+questions["I try to be obliging"] =["friendly"];
+questions["I am always cheerful"] =["personal"];
+questions["I am self-confident"] =["logical", "leader"];
+questions["People say I am a sympathetic type"] =["personal", "friendly"];
+questions["I have a tolerant attitude towards life"] =["hard working"];
+questions["I am an assertive person"] =["leader"];
+
+shuffled_questions = [];
+first_n_questions = [];
+
+var keys = [];
+for (var key in questions) {
+  if (questions.hasOwnProperty(key)) {
+    shuffled_questions.push(key);
+  }
+}
+
+shuffled_questions = shuffle(shuffled_questions);
+first_n_questions = shuffled_questions.slice(0, 7);
+
+questions_html = document.getElementsByClassName("questions");
+for(var i = 0; i < questions_html.length; i++){
+  questions_html[i].innerHTML = first_n_questions[i];
+}
+
+$.fn.scrollView = function () {
+    return this.each(function () {
+        $('html, body').animate({
+            scrollTop: $(this).offset().top
+        }, 1000);
+    });
+}
+
+function randomIntFromInterval(min,max)
+{
+    return Math.floor(Math.random()*(max-min+1)+min);
+}
+
+function getToday(){
+
+  today = new Date();
+  dd = today.getDate();
+  mm = today.getMonth()+1; //January is 0!
+  yyyy = today.getFullYear();
+
+  if(dd<10) {
+      dd='0'+dd
+  } 
+
+  if(mm<10) {
+      mm='0'+mm
+  }
+
+  today = yyyy+"-"+mm+"-"+dd;
+  return today;
+}
+
+function getTomorrow(){
+  var currentDate = new Date(new Date().getTime() + 24 * 60 * 60 * 1000);
+  var day = currentDate.getDate();
+  var month = currentDate.getMonth() + 1;
+  var year = currentDate.getFullYear();
+    if(day<10) {
+      day='0'+day;
+  } 
+
+  if(month<10) {
+      month='0'+month;
+  }
+  var tomorrow = year+"-"+month+"-"+day;
+  return tomorrow;
+}
+
+latitude = "";
+longitude = "";
+rounded_latitude = "";
+rounded_longitude = "";
+
+
+function calcDestination(){
+    return "New York City";
+}
+
+function calcJob(){
+    return "Plumber";
+}
+
+
+//some indeed function that i need to learn later.
+function clearDefaults() {
+  var formInputs = document.getElementById('indeed_jobform').elements;
+  for(var i = 0; i < formInputs.length; i++) {
+    if(formInputs[i].value == 'title, keywords' || formInputs[i].value == 'city, state, or zip') {
+    formInputs[i].value = '';
+    }
+  }
+  
+}
+
+function todayOrTomorrowAjax(date){
+
+                price = response["results"][0]["price"];
+                airline = response["results"][0]["airline"];
+                origin = response["results"][0]["origin"];
+                destination = response["results"][0]["destination"]; //we need to make this not hardcoded. (questions, get info about the user. decide on a "random" destination.)
+                destination_name = "";
+          $.getJSON("https://gist.githubusercontent.com/tdreyno/4278655/raw/7b0762c09b519f40397e4c3e100b097d861f5588/airports.json", function(json) {
+          for(var i = 0; i < json.length; i++)
+          {
+            if(json[i].code == destination)
+            {
+              destination_name = json[i].city;
+              document.getElementById("flight_info").innerHTML = name +", your one way ticket from <strong>"+airport_name+"</strong> to <strong>"+destination_airport_name+"</strong> departs today ("+date+") at a cost of <strong>$"+price+"</strong> and you can begin your new life soon enough. Check out these job listings!";
+
+              return json[i].city; //unused as of now.
+            }
+          }
+
+
+        });
+}
+
+
+
+
+//Gathers data so we know where the user is coming from. We use the longitude and latitude to use amadeus' api to find nearby airports.
+$.ajax({
+    url: "http://ipinfo.io/json",
+    async: false,
+    success: function(response) {
+    var coordinates = response.loc.split(",");
+    latitude = coordinates[0];
+    longitude = coordinates[1];
+    // document.getElementById("region").innerHTML = response.region;
+    // document.getElementById("city").innerHTML = response.city;
+    // document.getElementById("latitude").innerHTML = latitude;
+    // document.getElementById("longitude").innerHTML = longitude;
+    // document.getElementById("header").innerHTML = "Get me outta "+response.city+"!";
+    document.getElementById("main_header").innerHTML = "<strong>Get Me Outta "+response.city+"!</strong>"
+    rounded_latitude = parseInt(latitude);
+    rounded_longitude = parseInt(longitude);
+    rounded_latitude = rounded_latitude.toString();
+    rounded_longitude = rounded_longitude.toString();
+
+},
+    dataType: 'json',
+    statusCode: {
+        429: function() {
+            alert( "Number of tries exceeded" );
+        }
+    }
+});
+
+function submitAnswers(){
+  var name = document.getElementsByName('FirstName')[0].value
+//Mostly used to get the most nearby airport.
+   $.ajax({
+            url: "https://api.sandbox.amadeus.com/v1.2/airports/nearest-relevant?apikey=mQIvL9zjRgJ38yFcBU0H4Y8OvdfThowD&latitude="+rounded_latitude+"&longitude="+rounded_longitude,
+            async: false,
+            success: function(response) {
+                airport = response[0]["airport"];
+                airport_name = response[0]["airport_name"];
+                city = response[0]["city"];
+                city_name = response[0]["city_name"];
+                distance = response[0]["distance"];
+                aircraft_movements = response[0]["aircraft_movements"];
+                timezone = response[0]["timezone"];
+            }
+    });
+
+// status_good = 0;
+
+
+//   latitude_destination = randomIntFromInterval(26,47);
+//   longitude_destination = randomIntFromInterval(68,121) * -1;
+
+
+// //find psuedorandom "nearby airport" on random coordinates.
+//       $.ajax({
+//             url: "https://api.sandbox.amadeus.com/v1.2/airports/nearest-relevant?apikey=mQIvL9zjRgJ38yFcBU0H4Y8OvdfThowD&latitude="+latitude_destination.toString()+"&longitude="+longitude_destination.toString(),
+//             async: false,
+//             success: function(response) {
+//                 destination_airport = response[0]["airport"];
+//                 destination_airport_name = response[0]["airport_name"];
+//                 destination_city = response[0]["city"];
+//                 destination_city_name = response[0]["city_name"];
+//                 destination_distance = response[0]["distance"];
+//                 destination_aircraft_movements = response[0]["aircraft_movements"];
+//                 destination_timezone = response[0]["timezone"];
+//             }
+//     });
+
+
+//code is basically same thing. checks for today's date and if there are flights. if not, we check tomorrow.
+      $.ajax({
+            url: "http://api.sandbox.amadeus.com/v1.2/flights/inspiration-search?apikey={KEY}&origin="+city+"&destination="+selected_airport+"&departure_date="+getToday()+"&one-way=true",
+            async: false,
+            success: function(response) {
+
+
+                price = response["results"][0]["price"];
+                airline = response["results"][0]["airline"];
+                origin = response["results"][0]["origin"];
+                destination = response["results"][0]["destination"]; //we need to make this not hardcoded. (questions, get info about the user. decide on a "random" destination.)
+                destination_name = "";
+
+              document.getElementById("flight_info").innerHTML = name +", your one way ticket from <strong>"+airport_name+"</strong> to <strong>"+selected_city+"</strong> departs today ("+getToday()+") at a cost of <strong>$"+price+"</strong> and you can begin your new life soon enough. Check out these job listings!";
+
+
+
+
+
+            }, error: function(){
+                    $.ajax({
+            url: "http://api.sandbox.amadeus.com/v1.2/flights/inspiration-search?apikey={KEY}&origin="+city+"&destination="+selected_airport+"&departure_date="+getTomorrow()+"&one-way=true",
+            async: false,
+            success: function(response) {
+
+                price = response["results"][0]["price"];
+                airline = response["results"][0]["airline"];
+                origin = response["results"][0]["origin"];
+                destination = response["results"][0]["destination"]; //we need to make this not hardcoded. (questions, get info about the user. decide on a "random" destination.)
+                destination_name = "";
+
+              document.getElementById("flight_info").innerHTML = name +", your one way ticket from <strong>"+airport_name+"</strong> to <strong>"+selected_city+"</strong> departs tomorrow ("+getTomorrow()+") at a cost of <strong>$"+price+"</strong> and you can begin your new life soon enough. Check out these job listings!";
+
+
+            }
+    });
+            },
+           dataType: "json"
+
+    });
+
+
+
+answers = {};
+
+radio_html = document.getElementsByClassName("radio_yes");
+for(var i = 0; i < radio_html.length; i++){
+  if(radio_html[i].checked){
+    temp = questions[shuffled_questions[i]]
+    for(var j = 0; j < temp.length; j++){
+      if(answers[temp[j]] == null){
+        answers[temp[j]] = 1; //found a attribute for first time
+      }else{
+        answers[temp[j]]++;
+      }
+    }
+  }
+}
+
+temp = []
+
+var keys = [];
+for (var key in answers) {
+  if (answers.hasOwnProperty(key)) {
+    temp.push(answers[key]);
+  }
+}
+
+temp = temp.sort();
+temp = temp.reverse();
+temp = temp.slice(1,2);
+temp = temp[0];
+
+keywords = [];
+
+var keys = [];
+for (var key in answers) {
+  if (answers.hasOwnProperty(key)) {
+    if(answers[key] >= temp){
+      keywords.push(key);
+    }
+    if(keywords.length == 2){
+      break;
+    }
+  }
+}
+
+keyword_string = keywords[0]+" "+keywords[1];
+
+                 $.ajax({
+                  type: "POST",
+                  contentType: "application/json; charset=utf-8",
+                  url: "/getIndeedInfo",
+                  async: false,
+                  data: JSON.stringify({job: keyword_string, location: selected_city.replace(" ", "+")}),
+                  success: function (response) {
+                    document.getElementById("jobDescription").innerHTML = response["summary"].replace(/<\/?[^>]+(>|$)/g, "");
+                    document.getElementById("companyName").innerHTML = response["company"].replace(/<\/?[^>]+(>|$)/g, "");
+                    document.getElementById("jobTitle").innerHTML = response["jobTitle"].replace(/<\/?[^>]+(>|$)/g, "");
+                    document.getElementById("location").innerHTML = response["location"];
+                    document.getElementById("indeedJobLink").href = response["link"];
+                    $("#indeedJobLink").show();
+
+                  },
+                  dataType: "json"
+                });
+
+
+// alert("https://www.googleapis.com/customsearch/v1?key=AIzaSyCwytMvkCwGEpsq5IB2FiROYpNI_xtp0qw&imgSize=xxlarge&cx=000499692619315907960:zt-d3xoad3g&q=person "+document.getElementById("location").innerHTML.replace(","," ")+"&searchType=image&imgSize=small&alt=json");
+
+  $.ajax({
+            url: "https://www.googleapis.com/customsearch/v1?key={KEY}&imgSize=xxlarge&cx=000499692619315907960:zt-d3xoad3g&q=person "+document.getElementById("location").innerHTML.replace(","," ")+"&searchType=image&imgSize=small&alt=json",
+            success: function(response) {
+               $('#banner').css('background-image','url('+response["items"][0]["link"]+')');
+            },
+            dataType: "json"
+    });
+
+
+    $.ajax({
+            url: "https://www.googleapis.com/customsearch/v1?key={KEY}&imgSize=large&cx=000499692619315907960:zt-d3xoad3g&q="+document.getElementById("jobTitle").innerHTML+"&searchType=image&imgSize=small&alt=json",
+            success: function(response) {
+               document.getElementById("jobPicture").src=response["items"][0]["link"];
+               
+            }
+    });
+
+
+
+  $("#jobTable").show();
+  //window.location = '#job_description_section';
+$("#flight_info").scrollView();
+
+
+}
+</script>
+  </body>
+</html>
+
