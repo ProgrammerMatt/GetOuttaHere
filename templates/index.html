@@ -413,7 +413,7 @@ function submitAnswers(){
   var name = document.getElementsByName('FirstName')[0].value
 //Mostly used to get the most nearby airport.
    $.ajax({
-            url: "https://api.sandbox.amadeus.com/v1.2/airports/nearest-relevant?apikey=mQIvL9zjRgJ38yFcBU0H4Y8OvdfThowD&latitude="+rounded_latitude+"&longitude="+rounded_longitude,
+            url: "https://api.sandbox.amadeus.com/v1.2/airports/nearest-relevant?apikey={your_key}&latitude="+rounded_latitude+"&longitude="+rounded_longitude,
             async: false,
             success: function(response) {
                 airport = response[0]["airport"];
@@ -425,28 +425,6 @@ function submitAnswers(){
                 timezone = response[0]["timezone"];
             }
     });
-
-// status_good = 0;
-
-
-//   latitude_destination = randomIntFromInterval(26,47);
-//   longitude_destination = randomIntFromInterval(68,121) * -1;
-
-
-// //find psuedorandom "nearby airport" on random coordinates.
-//       $.ajax({
-//             url: "https://api.sandbox.amadeus.com/v1.2/airports/nearest-relevant?apikey=mQIvL9zjRgJ38yFcBU0H4Y8OvdfThowD&latitude="+latitude_destination.toString()+"&longitude="+longitude_destination.toString(),
-//             async: false,
-//             success: function(response) {
-//                 destination_airport = response[0]["airport"];
-//                 destination_airport_name = response[0]["airport_name"];
-//                 destination_city = response[0]["city"];
-//                 destination_city_name = response[0]["city_name"];
-//                 destination_distance = response[0]["distance"];
-//                 destination_aircraft_movements = response[0]["aircraft_movements"];
-//                 destination_timezone = response[0]["timezone"];
-//             }
-//     });
 
 
 //code is basically same thing. checks for today's date and if there are flights. if not, we check tomorrow.
